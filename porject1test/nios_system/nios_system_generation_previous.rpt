@@ -1,0 +1,137 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /acct/tydw/Desktop/CSCE313/porject1test/nios_system.qsys --block-symbol-file --output-directory=/acct/tydw/Desktop/CSCE313/porject1test/nios_system --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading porject1test/nios_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding random_pattern [altera_avalon_pio 18.1]
+Progress: Parameterizing module random_pattern
+Progress: Adding system_counter [altera_avalon_pio 18.1]
+Progress: Parameterizing module system_counter
+Progress: Adding system_modes [altera_avalon_pio 18.1]
+Progress: Parameterizing module system_modes
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_system.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: nios_system.system_modes: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: nios_system.random_pattern: random_pattern.s1 must be connected to an Avalon-MM master
+Warning: nios_system.system_counter: system_counter.s1 must be connected to an Avalon-MM master
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /acct/tydw/Desktop/CSCE313/porject1test/nios_system.qsys --synthesis=VERILOG --output-directory=/acct/tydw/Desktop/CSCE313/porject1test/nios_system/synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading porject1test/nios_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding random_pattern [altera_avalon_pio 18.1]
+Progress: Parameterizing module random_pattern
+Progress: Adding system_counter [altera_avalon_pio 18.1]
+Progress: Parameterizing module system_counter
+Progress: Adding system_modes [altera_avalon_pio 18.1]
+Progress: Parameterizing module system_modes
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios_system.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: nios_system.system_modes: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: nios_system.random_pattern: random_pattern.s1 must be connected to an Avalon-MM master
+Warning: nios_system.system_counter: system_counter.s1 must be connected to an Avalon-MM master
+Info: nios_system: Generating nios_system "nios_system" for QUARTUS_SYNTH
+Info: jtag_uart_0: Starting RTL generation for module 'nios_system_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_system_jtag_uart_0 --dir=/tmp/alt9746_8578007473176837237.dir/0002_jtag_uart_0_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_8578007473176837237.dir/0002_jtag_uart_0_gen//nios_system_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'nios_system_jtag_uart_0'
+Info: jtag_uart_0: "nios_system" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_gen2_0: "nios_system" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'nios_system_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_system_onchip_memory2_0 --dir=/tmp/alt9746_8578007473176837237.dir/0003_onchip_memory2_0_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_8578007473176837237.dir/0003_onchip_memory2_0_gen//nios_system_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'nios_system_onchip_memory2_0'
+Info: onchip_memory2_0: "nios_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: random_pattern: Starting RTL generation for module 'nios_system_random_pattern'
+Info: random_pattern:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_random_pattern --dir=/tmp/alt9746_8578007473176837237.dir/0004_random_pattern_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_8578007473176837237.dir/0004_random_pattern_gen//nios_system_random_pattern_component_configuration.pl  --do_build_sim=0  ]
+Info: random_pattern: Done RTL generation for module 'nios_system_random_pattern'
+Info: random_pattern: "nios_system" instantiated altera_avalon_pio "random_pattern"
+Info: system_counter: Starting RTL generation for module 'nios_system_system_counter'
+Info: system_counter:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_system_counter --dir=/tmp/alt9746_8578007473176837237.dir/0005_system_counter_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_8578007473176837237.dir/0005_system_counter_gen//nios_system_system_counter_component_configuration.pl  --do_build_sim=0  ]
+Info: system_counter: Done RTL generation for module 'nios_system_system_counter'
+Info: system_counter: "nios_system" instantiated altera_avalon_pio "system_counter"
+Info: system_modes: Starting RTL generation for module 'nios_system_system_modes'
+Info: system_modes:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_system_modes --dir=/tmp/alt9746_8578007473176837237.dir/0006_system_modes_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_8578007473176837237.dir/0006_system_modes_gen//nios_system_system_modes_component_configuration.pl  --do_build_sim=0  ]
+Info: system_modes: Done RTL generation for module 'nios_system_system_modes'
+Info: system_modes: "nios_system" instantiated altera_avalon_pio "system_modes"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "nios_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "nios_system" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "nios_system" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'nios_system_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64//eperlcmd -I /usr/local/3rdparty/altera/18.1/quartus/linux64//perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=nios_system_nios2_gen2_0_cpu --dir=/tmp/alt9746_8578007473176837237.dir/0009_cpu_gen/ --quartus_bindir=/usr/local/3rdparty/altera/18.1/quartus/linux64/ --verilog --config=/tmp/alt9746_8578007473176837237.dir/0009_cpu_gen//nios_system_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2024.01.24 08:30:44 (*) Starting Nios II generation
+Info: cpu: # 2024.01.24 08:30:44 (*)   Checking for plaintext license.
+Info: cpu: # 2024.01.24 08:30:44 (*)   Couldn't query license setup in Quartus directory /usr/local/3rdparty/altera/18.1/quartus/linux64/
+Info: cpu: # 2024.01.24 08:30:44 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2024.01.24 08:30:44 (*)   Plaintext license not found.
+Info: cpu: # 2024.01.24 08:30:44 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2024.01.24 08:30:45 (*)   Couldn't query license setup in Quartus directory /usr/local/3rdparty/altera/18.1/quartus/linux64/
+Info: cpu: # 2024.01.24 08:30:45 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2024.01.24 08:30:45 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: cpu: # 2024.01.24 08:30:45 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2024.01.24 08:30:45 (*)   Creating all objects for CPU
+Info: cpu: # 2024.01.24 08:30:45 (*)     Testbench
+Info: cpu: # 2024.01.24 08:30:45 (*)     Instruction decoding
+Info: cpu: # 2024.01.24 08:30:45 (*)       Instruction fields
+Info: cpu: # 2024.01.24 08:30:45 (*)       Instruction decodes
+Info: cpu: # 2024.01.24 08:30:45 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2024.01.24 08:30:45 (*)       Instruction controls
+Info: cpu: # 2024.01.24 08:30:45 (*)     Pipeline frontend
+Info: cpu: # 2024.01.24 08:30:45 (*)     Pipeline backend
+Info: cpu: # 2024.01.24 08:30:46 (*)   Generating RTL from CPU objects
+Info: cpu: # 2024.01.24 08:30:47 (*)   Creating encrypted RTL
+Info: cpu: # 2024.01.24 08:30:48 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'nios_system_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: nios2_gen2_0_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_gen2_0_data_master_limiter"
+Info: Reusing file /acct/tydw/Desktop/CSCE313/porject1test/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file /acct/tydw/Desktop/CSCE313/porject1test/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /acct/tydw/Desktop/CSCE313/porject1test/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file /acct/tydw/Desktop/CSCE313/porject1test/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: nios_system: Done "nios_system" with 31 modules, 51 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

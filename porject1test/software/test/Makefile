@@ -142,7 +142,7 @@ ACDS_VERSION := 18.1
 ELF := test.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS := hello_world_small.c
+C_SRCS := prj2.c
 CXX_SRCS :=
 ASM_SRCS :=
 

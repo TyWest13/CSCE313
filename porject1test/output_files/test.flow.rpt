@@ -1,5 +1,5 @@
 Flow report for test
-Wed Jan 17 09:13:22 2024
+Wed Jan 24 08:59:42 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Jan 17 09:13:22 2024           ;
+; Flow Status                        ; Successful - Wed Jan 24 08:59:42 2024           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; test                                            ;
 ; Top-level Entity Name              ; test                                            ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE115F29C7                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 3,031 / 114,480 ( 3 % )                         ;
-;     Total combinational functions  ; 2,689 / 114,480 ( 2 % )                         ;
-;     Dedicated logic registers      ; 1,806 / 114,480 ( 2 % )                         ;
-; Total registers                    ; 1806                                            ;
-; Total pins                         ; 5 / 529 ( < 1 % )                               ;
+; Total logic elements               ; 3,176 / 114,480 ( 3 % )                         ;
+;     Total combinational functions  ; 2,794 / 114,480 ( 2 % )                         ;
+;     Dedicated logic registers      ; 1,889 / 114,480 ( 2 % )                         ;
+; Total registers                    ; 1889                                            ;
+; Total pins                         ; 31 / 529 ( 6 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 604,672 / 3,981,312 ( 15 % )                    ;
 ; Embedded Multiplier 9-bit elements ; 6 / 532 ( 1 % )                                 ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/17/2024 09:12:20 ;
+; Start date & time ; 01/24/2024 08:58:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; test                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 128122668291523.170550074044106        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 128122668291523.170610471853612        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -96,12 +96,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:36     ; 1.0                     ; 1134 MB             ; 00:01:05                           ;
-; Fitter               ; 00:00:12     ; 1.1                     ; 2079 MB             ; 00:00:18                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 839 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 991 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 1109 MB             ; 00:00:03                           ;
-; Total                ; 00:00:58     ; --                      ; --                  ; 00:01:30                           ;
+; Analysis & Synthesis ; 00:00:38     ; 1.0                     ; 1144 MB             ; 00:01:12                           ;
+; Fitter               ; 00:00:12     ; 1.1                     ; 2081 MB             ; 00:00:18                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 838 MB              ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 994 MB              ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 1113 MB             ; 00:00:03                           ;
+; Total                ; 00:00:59     ; --                      ; --                  ; 00:01:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

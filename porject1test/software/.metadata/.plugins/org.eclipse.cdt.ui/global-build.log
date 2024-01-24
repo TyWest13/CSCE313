@@ -205,3 +205,45 @@ Info: Building ../test_bsp/
 make --no-print-directory -C ../test_bsp/
 [BSP build complete]
 [test build complete]
+08:38:12 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [Makefile:545: public.mk] Error 1
+make: *** [Makefile:893: ../test_bsp/-recurs-make-lib] Error 2
+08:38:57 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [Makefile:545: public.mk] Error 1
+make: *** [Makefile:893: ../test_bsp/-recurs-make-lib] Error 2
+08:45:05 **** Clean-only build of configuration Nios II for project prj2_bsp ****
+make clean 
+[BSP clean complete]
+08:45:06 **** Clean-only build of configuration Nios II for project prj2 ****
+make clean 
+[prj2 clean complete]

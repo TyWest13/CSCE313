@@ -4,8 +4,11 @@
 
 `timescale 1 ps / 1 ps
 module nios_system (
-		input  wire  clk_clk,       //   clk.clk
-		input  wire  reset_reset_n  // reset.reset_n
+		input  wire        clk_clk,        //     clk.clk
+		output wire [7:0]  cout_export,    //    cout.export
+		input  wire [1:0]  modes_export,   //   modes.export
+		output wire [17:0] pattern_export, // pattern.export
+		input  wire        reset_reset_n   //   reset.reset_n
 	);
 
 	wire  [31:0] nios2_gen2_0_data_master_readdata;                           // mm_interconnect_0:nios2_gen2_0_data_master_readdata -> nios2_gen2_0:d_readdata
@@ -44,9 +47,21 @@ module nios_system (
 	wire         mm_interconnect_0_onchip_memory2_0_s1_write;                 // mm_interconnect_0:onchip_memory2_0_s1_write -> onchip_memory2_0:write
 	wire  [31:0] mm_interconnect_0_onchip_memory2_0_s1_writedata;             // mm_interconnect_0:onchip_memory2_0_s1_writedata -> onchip_memory2_0:writedata
 	wire         mm_interconnect_0_onchip_memory2_0_s1_clken;                 // mm_interconnect_0:onchip_memory2_0_s1_clken -> onchip_memory2_0:clken
+	wire  [31:0] mm_interconnect_0_system_modes_s1_readdata;                  // system_modes:readdata -> mm_interconnect_0:system_modes_s1_readdata
+	wire   [1:0] mm_interconnect_0_system_modes_s1_address;                   // mm_interconnect_0:system_modes_s1_address -> system_modes:address
+	wire         mm_interconnect_0_system_counter_s1_chipselect;              // mm_interconnect_0:system_counter_s1_chipselect -> system_counter:chipselect
+	wire  [31:0] mm_interconnect_0_system_counter_s1_readdata;                // system_counter:readdata -> mm_interconnect_0:system_counter_s1_readdata
+	wire   [1:0] mm_interconnect_0_system_counter_s1_address;                 // mm_interconnect_0:system_counter_s1_address -> system_counter:address
+	wire         mm_interconnect_0_system_counter_s1_write;                   // mm_interconnect_0:system_counter_s1_write -> system_counter:write_n
+	wire  [31:0] mm_interconnect_0_system_counter_s1_writedata;               // mm_interconnect_0:system_counter_s1_writedata -> system_counter:writedata
+	wire         mm_interconnect_0_random_pattern_s1_chipselect;              // mm_interconnect_0:random_pattern_s1_chipselect -> random_pattern:chipselect
+	wire  [31:0] mm_interconnect_0_random_pattern_s1_readdata;                // random_pattern:readdata -> mm_interconnect_0:random_pattern_s1_readdata
+	wire   [1:0] mm_interconnect_0_random_pattern_s1_address;                 // mm_interconnect_0:random_pattern_s1_address -> random_pattern:address
+	wire         mm_interconnect_0_random_pattern_s1_write;                   // mm_interconnect_0:random_pattern_s1_write -> random_pattern:write_n
+	wire  [31:0] mm_interconnect_0_random_pattern_s1_writedata;               // mm_interconnect_0:random_pattern_s1_writedata -> random_pattern:writedata
 	wire         irq_mapper_receiver0_irq;                                    // jtag_uart_0:av_irq -> irq_mapper:receiver0_irq
 	wire  [31:0] nios2_gen2_0_irq_irq;                                        // irq_mapper:sender_irq -> nios2_gen2_0:irq
-	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, onchip_memory2_0:reset, rst_translator:in_reset]
+	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, onchip_memory2_0:reset, random_pattern:reset_n, rst_translator:in_reset, system_counter:reset_n, system_modes:reset_n]
 	wire         rst_controller_reset_out_reset_req;                          // rst_controller:reset_req -> [nios2_gen2_0:reset_req, onchip_memory2_0:reset_req, rst_translator:reset_req_in]
 
 	nios_system_jtag_uart_0 jtag_uart_0 (
@@ -107,6 +122,36 @@ module nios_system (
 		.freeze     (1'b0)                                              // (terminated)
 	);
 
+	nios_system_random_pattern random_pattern (
+		.clk        (clk_clk),                                        //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),                //               reset.reset_n
+		.address    (mm_interconnect_0_random_pattern_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_random_pattern_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_random_pattern_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_random_pattern_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_random_pattern_s1_readdata),   //                    .readdata
+		.out_port   (pattern_export)                                  // external_connection.export
+	);
+
+	nios_system_system_counter system_counter (
+		.clk        (clk_clk),                                        //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),                //               reset.reset_n
+		.address    (mm_interconnect_0_system_counter_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_system_counter_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_system_counter_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_system_counter_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_system_counter_s1_readdata),   //                    .readdata
+		.out_port   (cout_export)                                     // external_connection.export
+	);
+
+	nios_system_system_modes system_modes (
+		.clk      (clk_clk),                                    //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),            //               reset.reset_n
+		.address  (mm_interconnect_0_system_modes_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_system_modes_s1_readdata), //                    .readdata
+		.in_port  (modes_export)                                // external_connection.export
+	);
+
 	nios_system_mm_interconnect_0 mm_interconnect_0 (
 		.clk_0_clk_clk                                  (clk_clk),                                                     //                                clk_0_clk.clk
 		.nios2_gen2_0_reset_reset_bridge_in_reset_reset (rst_controller_reset_out_reset),                              // nios2_gen2_0_reset_reset_bridge_in_reset.reset
@@ -145,7 +190,19 @@ module nios_system (
 		.onchip_memory2_0_s1_writedata                  (mm_interconnect_0_onchip_memory2_0_s1_writedata),             //                                         .writedata
 		.onchip_memory2_0_s1_byteenable                 (mm_interconnect_0_onchip_memory2_0_s1_byteenable),            //                                         .byteenable
 		.onchip_memory2_0_s1_chipselect                 (mm_interconnect_0_onchip_memory2_0_s1_chipselect),            //                                         .chipselect
-		.onchip_memory2_0_s1_clken                      (mm_interconnect_0_onchip_memory2_0_s1_clken)                  //                                         .clken
+		.onchip_memory2_0_s1_clken                      (mm_interconnect_0_onchip_memory2_0_s1_clken),                 //                                         .clken
+		.random_pattern_s1_address                      (mm_interconnect_0_random_pattern_s1_address),                 //                        random_pattern_s1.address
+		.random_pattern_s1_write                        (mm_interconnect_0_random_pattern_s1_write),                   //                                         .write
+		.random_pattern_s1_readdata                     (mm_interconnect_0_random_pattern_s1_readdata),                //                                         .readdata
+		.random_pattern_s1_writedata                    (mm_interconnect_0_random_pattern_s1_writedata),               //                                         .writedata
+		.random_pattern_s1_chipselect                   (mm_interconnect_0_random_pattern_s1_chipselect),              //                                         .chipselect
+		.system_counter_s1_address                      (mm_interconnect_0_system_counter_s1_address),                 //                        system_counter_s1.address
+		.system_counter_s1_write                        (mm_interconnect_0_system_counter_s1_write),                   //                                         .write
+		.system_counter_s1_readdata                     (mm_interconnect_0_system_counter_s1_readdata),                //                                         .readdata
+		.system_counter_s1_writedata                    (mm_interconnect_0_system_counter_s1_writedata),               //                                         .writedata
+		.system_counter_s1_chipselect                   (mm_interconnect_0_system_counter_s1_chipselect),              //                                         .chipselect
+		.system_modes_s1_address                        (mm_interconnect_0_system_modes_s1_address),                   //                          system_modes_s1.address
+		.system_modes_s1_readdata                       (mm_interconnect_0_system_modes_s1_readdata)                   //                                         .readdata
 	);
 
 	nios_system_irq_mapper irq_mapper (

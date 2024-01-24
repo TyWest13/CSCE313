@@ -1,0 +1,6 @@
+08:45:06 **** Clean-only build of configuration Nios II for project prj2 ****
+make clean 
+[prj2 clean complete]
+
+08:45:06 Build Finished (took 161ms)
+
