@@ -1,0 +1,9 @@
+09:15:36 **** Incremental Build of configuration Nios II for project ptoject1-test ****
+make all 
+Info: Building ../ptoject1-test_bsp/
+make --no-print-directory -C ../ptoject1-test_bsp/
+[BSP build complete]
+[ptoject1-test build complete]
+
+09:15:36 Build Finished (took 162ms)
+

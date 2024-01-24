@@ -1,0 +1,24 @@
+08:37:58 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+08:38:06 **** Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+08:38:06 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+08:38:32 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
