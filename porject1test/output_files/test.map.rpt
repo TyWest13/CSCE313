@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test
-Wed Jan 24 08:59:17 2024
+Wed Jan 24 09:17:36 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -134,10 +134,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 126. Port Connectivity Checks: "nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic"
 127. Port Connectivity Checks: "nios_system:u0|nios_system_jtag_uart_0:jtag_uart_0"
 128. Post-Synthesis Netlist Statistics for Top Partition
-129. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
-130. Elapsed Time Per Partition
-131. Analysis & Synthesis Messages
-132. Analysis & Synthesis Suppressed Messages
+129. Elapsed Time Per Partition
+130. Analysis & Synthesis Messages
+131. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -163,7 +162,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jan 24 08:59:17 2024           ;
+; Analysis & Synthesis Status        ; Successful - Wed Jan 24 09:17:36 2024           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; test                                            ;
 ; Top-level Entity Name              ; test                                            ;
@@ -1328,14 +1327,6 @@ Encoding Type:  One-Hot
 ; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |test|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|A_wr_data_unfiltered[29]                                                                                                                                                                                                                                                                     ;
 ; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |test|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|A_wr_data_unfiltered[7]                                                                                                                                                                                                                                                                      ;
 ; 7:1                ; 10 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |test|nios_system:u0|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|F_ic_data_rd_addr_nxt[1]                                                                                                                                                                                                                                                                     ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |test|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[4]                                                       ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |test|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[2][1]                                              ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |test|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[3]                                              ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |test|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][1]                                                     ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |test|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]                                        ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |test|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[1]                           ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |test|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]                                                ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; Yes        ; |test|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -3653,44 +3644,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 
 
-+------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub ;
-+-----------------------+------------------------------------------+
-; Type                  ; Count                                    ;
-+-----------------------+------------------------------------------+
-; boundary_port         ; 141                                      ;
-; cycloneiii_ff         ; 85                                       ;
-;     CLR               ; 6                                        ;
-;     ENA               ; 16                                       ;
-;     ENA CLR           ; 24                                       ;
-;     ENA CLR SLD       ; 2                                        ;
-;     ENA SCLR          ; 5                                        ;
-;     ENA SLD           ; 9                                        ;
-;     SCLR              ; 7                                        ;
-;     plain             ; 16                                       ;
-; cycloneiii_lcell_comb ; 151                                      ;
-;     arith             ; 8                                        ;
-;         2 data inputs ; 8                                        ;
-;     normal            ; 143                                      ;
-;         0 data inputs ; 1                                        ;
-;         1 data inputs ; 6                                        ;
-;         2 data inputs ; 27                                       ;
-;         3 data inputs ; 37                                       ;
-;         4 data inputs ; 72                                       ;
-;                       ;                                          ;
-; Max LUT depth         ; 4.00                                     ;
-; Average LUT depth     ; 2.15                                     ;
-+-----------------------+------------------------------------------+
-
-
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:03     ;
-; sld_hub:auto_hub ; 00:00:00     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -3699,54 +3659,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Wed Jan 24 08:58:38 2024
+    Info: Processing started: Wed Jan 24 09:16:57 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12248): Elaborating Platform Designer system entity "nios_system.qsys"
 Info (12250): Picked up _JAVA_OPTIONS: -Duser.home=/acct/tydw
-Info (12250): 2024.01.24.08:58:47 Progress: Loading porject1test/nios_system.qsys
-Info (12250): 2024.01.24.08:58:48 Progress: Reading input file
-Info (12250): 2024.01.24.08:58:48 Progress: Adding clk_0 [clock_source 18.1]
-Info (12250): 2024.01.24.08:58:48 Progress: Parameterizing module clk_0
-Info (12250): 2024.01.24.08:58:48 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
-Info (12250): 2024.01.24.08:58:48 Progress: Parameterizing module jtag_uart_0
-Info (12250): 2024.01.24.08:58:48 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
-Info (12250): 2024.01.24.08:58:48 Progress: Parameterizing module nios2_gen2_0
-Info (12250): 2024.01.24.08:58:48 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
-Info (12250): 2024.01.24.08:58:48 Progress: Parameterizing module onchip_memory2_0
-Info (12250): 2024.01.24.08:58:48 Progress: Adding random_pattern [altera_avalon_pio 18.1]
-Info (12250): 2024.01.24.08:58:48 Progress: Parameterizing module random_pattern
-Info (12250): 2024.01.24.08:58:48 Progress: Adding system_counter [altera_avalon_pio 18.1]
-Info (12250): 2024.01.24.08:58:48 Progress: Parameterizing module system_counter
-Info (12250): 2024.01.24.08:58:48 Progress: Adding system_modes [altera_avalon_pio 18.1]
-Info (12250): 2024.01.24.08:58:48 Progress: Parameterizing module system_modes
-Info (12250): 2024.01.24.08:58:48 Progress: Building connections
-Info (12250): 2024.01.24.08:58:48 Progress: Parameterizing connections
-Info (12250): 2024.01.24.08:58:48 Progress: Validating
-Info (12250): 2024.01.24.08:58:49 Progress: Done reading input file
+Info (12250): 2024.01.24.09:17:07 Progress: Loading porject1test/nios_system.qsys
+Info (12250): 2024.01.24.09:17:07 Progress: Reading input file
+Info (12250): 2024.01.24.09:17:07 Progress: Adding clk_0 [clock_source 18.1]
+Info (12250): 2024.01.24.09:17:07 Progress: Parameterizing module clk_0
+Info (12250): 2024.01.24.09:17:07 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Info (12250): 2024.01.24.09:17:07 Progress: Parameterizing module jtag_uart_0
+Info (12250): 2024.01.24.09:17:07 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Info (12250): 2024.01.24.09:17:08 Progress: Parameterizing module nios2_gen2_0
+Info (12250): 2024.01.24.09:17:08 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Info (12250): 2024.01.24.09:17:08 Progress: Parameterizing module onchip_memory2_0
+Info (12250): 2024.01.24.09:17:08 Progress: Adding random_pattern [altera_avalon_pio 18.1]
+Info (12250): 2024.01.24.09:17:08 Progress: Parameterizing module random_pattern
+Info (12250): 2024.01.24.09:17:08 Progress: Adding system_counter [altera_avalon_pio 18.1]
+Info (12250): 2024.01.24.09:17:08 Progress: Parameterizing module system_counter
+Info (12250): 2024.01.24.09:17:08 Progress: Adding system_modes [altera_avalon_pio 18.1]
+Info (12250): 2024.01.24.09:17:08 Progress: Parameterizing module system_modes
+Info (12250): 2024.01.24.09:17:08 Progress: Building connections
+Info (12250): 2024.01.24.09:17:08 Progress: Parameterizing connections
+Info (12250): 2024.01.24.09:17:08 Progress: Validating
+Info (12250): 2024.01.24.09:17:08 Progress: Done reading input file
 Info (12250): Nios_system.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info (12250): Nios_system.system_modes: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info (12250): Nios_system: Generating nios_system "nios_system" for QUARTUS_SYNTH
 Info (12250): Jtag_uart_0: Starting RTL generation for module 'nios_system_jtag_uart_0'
-Info (12250): Jtag_uart_0:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_system_jtag_uart_0 --dir=/tmp/alt9746_1945983714656257392.dir/0002_jtag_uart_0_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_1945983714656257392.dir/0002_jtag_uart_0_gen//nios_system_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Jtag_uart_0:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_system_jtag_uart_0 --dir=/tmp/alt9746_7943360590837767029.dir/0002_jtag_uart_0_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_7943360590837767029.dir/0002_jtag_uart_0_gen//nios_system_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Jtag_uart_0: Done RTL generation for module 'nios_system_jtag_uart_0'
 Info (12250): Jtag_uart_0: "nios_system" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info (12250): Nios2_gen2_0: "nios_system" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info (12250): Onchip_memory2_0: Starting RTL generation for module 'nios_system_onchip_memory2_0'
-Info (12250): Onchip_memory2_0:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_system_onchip_memory2_0 --dir=/tmp/alt9746_1945983714656257392.dir/0003_onchip_memory2_0_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_1945983714656257392.dir/0003_onchip_memory2_0_gen//nios_system_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Onchip_memory2_0:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_system_onchip_memory2_0 --dir=/tmp/alt9746_7943360590837767029.dir/0003_onchip_memory2_0_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_7943360590837767029.dir/0003_onchip_memory2_0_gen//nios_system_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Onchip_memory2_0: Done RTL generation for module 'nios_system_onchip_memory2_0'
 Info (12250): Onchip_memory2_0: "nios_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info (12250): Random_pattern: Starting RTL generation for module 'nios_system_random_pattern'
-Info (12250): Random_pattern:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_random_pattern --dir=/tmp/alt9746_1945983714656257392.dir/0004_random_pattern_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_1945983714656257392.dir/0004_random_pattern_gen//nios_system_random_pattern_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Random_pattern:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_random_pattern --dir=/tmp/alt9746_7943360590837767029.dir/0004_random_pattern_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_7943360590837767029.dir/0004_random_pattern_gen//nios_system_random_pattern_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): Random_pattern: Done RTL generation for module 'nios_system_random_pattern'
 Info (12250): Random_pattern: "nios_system" instantiated altera_avalon_pio "random_pattern"
 Info (12250): System_counter: Starting RTL generation for module 'nios_system_system_counter'
-Info (12250): System_counter:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_system_counter --dir=/tmp/alt9746_1945983714656257392.dir/0005_system_counter_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_1945983714656257392.dir/0005_system_counter_gen//nios_system_system_counter_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): System_counter:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_system_counter --dir=/tmp/alt9746_7943360590837767029.dir/0005_system_counter_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_7943360590837767029.dir/0005_system_counter_gen//nios_system_system_counter_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): System_counter: Done RTL generation for module 'nios_system_system_counter'
 Info (12250): System_counter: "nios_system" instantiated altera_avalon_pio "system_counter"
 Info (12250): System_modes: Starting RTL generation for module 'nios_system_system_modes'
-Info (12250): System_modes:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_system_modes --dir=/tmp/alt9746_1945983714656257392.dir/0006_system_modes_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_1945983714656257392.dir/0006_system_modes_gen//nios_system_system_modes_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): System_modes:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/bin/perl -I /usr/local/3rdparty/altera/18.1/quartus/linux64/perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_system_modes --dir=/tmp/alt9746_7943360590837767029.dir/0006_system_modes_gen/ --quartus_dir=/usr/local/3rdparty/altera/18.1/quartus --verilog --config=/tmp/alt9746_7943360590837767029.dir/0006_system_modes_gen//nios_system_system_modes_component_configuration.pl  --do_build_sim=0  ]
 Info (12250): System_modes: Done RTL generation for module 'nios_system_system_modes'
 Info (12250): System_modes: "nios_system" instantiated altera_avalon_pio "system_modes"
 Info (12250): Avalon_st_adapter: Inserting error_adapter: error_adapter_0
@@ -3759,29 +3719,29 @@ Info (12250): Mm_interconnect_0: "nios_system" instantiated altera_mm_interconne
 Info (12250): Irq_mapper: "nios_system" instantiated altera_irq_mapper "irq_mapper"
 Info (12250): Rst_controller: "nios_system" instantiated altera_reset_controller "rst_controller"
 Info (12250): Cpu: Starting RTL generation for module 'nios_system_nios2_gen2_0_cpu'
-Info (12250): Cpu:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64//eperlcmd -I /usr/local/3rdparty/altera/18.1/quartus/linux64//perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=nios_system_nios2_gen2_0_cpu --dir=/tmp/alt9746_1945983714656257392.dir/0009_cpu_gen/ --quartus_bindir=/usr/local/3rdparty/altera/18.1/quartus/linux64/ --verilog --config=/tmp/alt9746_1945983714656257392.dir/0009_cpu_gen//nios_system_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info (12250): Cpu: # 2024.01.24 08:58:52 (*) Starting Nios II generation
-Info (12250): Cpu: # 2024.01.24 08:58:52 (*)   Checking for plaintext license.
-Info (12250): Cpu: # 2024.01.24 08:58:53 (*)   Couldn't query license setup in Quartus directory /usr/local/3rdparty/altera/18.1/quartus/linux64/
-Info (12250): Cpu: # 2024.01.24 08:58:53 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info (12250): Cpu: # 2024.01.24 08:58:53 (*)   Plaintext license not found.
-Info (12250): Cpu: # 2024.01.24 08:58:53 (*)   Checking for encrypted license (non-evaluation).
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)   Couldn't query license setup in Quartus directory /usr/local/3rdparty/altera/18.1/quartus/linux64/
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)   Encrypted license found.  SOF will not be time-limited.
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)   Elaborating CPU configuration settings
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)   Creating all objects for CPU
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)     Testbench
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)     Instruction decoding
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)       Instruction fields
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)       Instruction decodes
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)       Signals for RTL simulation waveforms
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)       Instruction controls
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)     Pipeline frontend
-Info (12250): Cpu: # 2024.01.24 08:58:54 (*)     Pipeline backend
-Info (12250): Cpu: # 2024.01.24 08:58:55 (*)   Generating RTL from CPU objects
-Info (12250): Cpu: # 2024.01.24 08:58:56 (*)   Creating encrypted RTL
-Info (12250): Cpu: # 2024.01.24 08:58:56 (*) Done Nios II generation
+Info (12250): Cpu:   Generation command is [exec /usr/local/3rdparty/altera/18.1/quartus/linux64//eperlcmd -I /usr/local/3rdparty/altera/18.1/quartus/linux64//perl/lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/europa -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin/perl_lib -I /usr/local/3rdparty/altera/18.1/quartus/sopc_builder/bin -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /usr/local/3rdparty/altera/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=nios_system_nios2_gen2_0_cpu --dir=/tmp/alt9746_7943360590837767029.dir/0009_cpu_gen/ --quartus_bindir=/usr/local/3rdparty/altera/18.1/quartus/linux64/ --verilog --config=/tmp/alt9746_7943360590837767029.dir/0009_cpu_gen//nios_system_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info (12250): Cpu: # 2024.01.24 09:17:12 (*) Starting Nios II generation
+Info (12250): Cpu: # 2024.01.24 09:17:12 (*)   Checking for plaintext license.
+Info (12250): Cpu: # 2024.01.24 09:17:12 (*)   Couldn't query license setup in Quartus directory /usr/local/3rdparty/altera/18.1/quartus/linux64/
+Info (12250): Cpu: # 2024.01.24 09:17:12 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): Cpu: # 2024.01.24 09:17:12 (*)   Plaintext license not found.
+Info (12250): Cpu: # 2024.01.24 09:17:12 (*)   Checking for encrypted license (non-evaluation).
+Info (12250): Cpu: # 2024.01.24 09:17:13 (*)   Couldn't query license setup in Quartus directory /usr/local/3rdparty/altera/18.1/quartus/linux64/
+Info (12250): Cpu: # 2024.01.24 09:17:13 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info (12250): Cpu: # 2024.01.24 09:17:13 (*)   Encrypted license found.  SOF will not be time-limited.
+Info (12250): Cpu: # 2024.01.24 09:17:13 (*)   Elaborating CPU configuration settings
+Info (12250): Cpu: # 2024.01.24 09:17:13 (*)   Creating all objects for CPU
+Info (12250): Cpu: # 2024.01.24 09:17:13 (*)     Testbench
+Info (12250): Cpu: # 2024.01.24 09:17:13 (*)     Instruction decoding
+Info (12250): Cpu: # 2024.01.24 09:17:13 (*)       Instruction fields
+Info (12250): Cpu: # 2024.01.24 09:17:13 (*)       Instruction decodes
+Info (12250): Cpu: # 2024.01.24 09:17:14 (*)       Signals for RTL simulation waveforms
+Info (12250): Cpu: # 2024.01.24 09:17:14 (*)       Instruction controls
+Info (12250): Cpu: # 2024.01.24 09:17:14 (*)     Pipeline frontend
+Info (12250): Cpu: # 2024.01.24 09:17:14 (*)     Pipeline backend
+Info (12250): Cpu: # 2024.01.24 09:17:15 (*)   Generating RTL from CPU objects
+Info (12250): Cpu: # 2024.01.24 09:17:15 (*)   Creating encrypted RTL
+Info (12250): Cpu: # 2024.01.24 09:17:16 (*) Done Nios II generation
 Info (12250): Cpu: Done RTL generation for module 'nios_system_nios2_gen2_0_cpu'
 Info (12250): Cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info (12250): Nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -4663,7 +4623,7 @@ Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "nios
 Warning (12020): Port "jdo" on the entity instantiation of "the_nios_system_nios2_gen2_0_cpu_nios2_oci_itrace" is connected to a signal of width 38. The formal width of the signal in the module is 16.  The extra bits will be ignored. File: /acct/tydw/Desktop/CSCE313/porject1test/db/ip/nios_system/submodules/nios_system_nios2_gen2_0_cpu.v Line: 3216
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
 Info (11172): Picked up _JAVA_OPTIONS: -Duser.home=/acct/tydw
-Info (11172): 2024.01.24.08:59:07 Progress: Loading sld1350ec5e/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2024.01.24.09:17:26 Progress: Loading sld1350ec5e/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -4721,9 +4681,6 @@ Info (13000): Registers with preset signals will power-up high File: /acct/tydw/
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 30 registers lost all their fanouts during netlist optimizations.
-Info (13000): Registers with preset signals will power-up high File: /usr/local/3rdparty/altera/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd Line: 386
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Info (144001): Generated suppressed messages file /acct/tydw/Desktop/CSCE313/porject1test/output_files/test.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -4736,10 +4693,10 @@ Info (21057): Implemented 4053 device resources after synthesis - the final reso
     Info (21064): Implemented 296 RAM segments
     Info (21062): Implemented 6 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1153 megabytes
-    Info: Processing ended: Wed Jan 24 08:59:17 2024
+    Info: Peak virtual memory: 1158 megabytes
+    Info: Processing ended: Wed Jan 24 09:17:36 2024
     Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:01:14
+    Info: Total CPU time (on all processors): 00:01:12
 
 
 +------------------------------------------+

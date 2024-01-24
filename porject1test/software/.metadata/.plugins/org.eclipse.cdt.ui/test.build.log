@@ -1,4 +1,4 @@
-08:38:57 **** Incremental Build of configuration Nios II for project test ****
+09:16:14 **** Build of configuration Nios II for project test ****
 make all 
 Info: Building ../test_bsp/
 make --no-print-directory -C ../test_bsp/
@@ -17,5 +17,5 @@ To generate from the command line:
 make[1]: *** [Makefile:545: public.mk] Error 1
 make: *** [Makefile:893: ../test_bsp/-recurs-make-lib] Error 2
 
-08:38:57 Build Finished (took 160ms)
+09:16:14 Build Finished (took 228ms)
 

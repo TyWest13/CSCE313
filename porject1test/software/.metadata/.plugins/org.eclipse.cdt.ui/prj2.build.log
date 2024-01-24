@@ -1,6 +1,9 @@
-08:45:06 **** Clean-only build of configuration Nios II for project prj2 ****
-make clean 
-[prj2 clean complete]
+09:20:01 **** Incremental Build of configuration Nios II for project prj2 ****
+make all 
+Info: Building ../prj2_bsp/
+make --no-print-directory -C ../prj2_bsp/
+[BSP build complete]
+[prj2 build complete]
 
-08:45:06 Build Finished (took 161ms)
+09:20:02 Build Finished (took 162ms)
 
