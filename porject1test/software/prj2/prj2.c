@@ -17,7 +17,6 @@
 #include <stdlib.h>
 
 
-
 int main()
 {
   alt_putstr("Project2 - CSCE 313\n");
@@ -31,7 +30,7 @@ int main()
 
   // declare the random variable as alt_u8 and initialize with 0x0
 
- alt_u8 rand = 0x0;
+  alt_u32 random = 0x0;
 
   // declare number of random patterns as int. You can initialize it with any number you wish
 
@@ -51,8 +50,8 @@ int main()
 			alt_putstr("LEDs light \n");
 
 			// Example to how light pattern_Base LEDs. Do the same to light other leds
-			IOWR_ALTERA_AVALON_PIO_DATA(RANDOM_PATTERN_BASE, 0xFF);
-
+			IOWR_ALTERA_AVALON_PIO_DATA(RANDOM_PATTERN_BASE, 0x3FFFF);
+			IOWR_ALTERA_AVALON_PIO_DATA(SYSTEM_COUNTER_BASE, 255);
 
 		}
 
@@ -62,7 +61,7 @@ int main()
 				alt_putstr("System counter \n");
 
 				// First, reset all LEDs as shown in the example below
-		  	  	IOWR_ALTERA_AVALON_PIO_DATA(RANDOM_PATTERN_BASE, 0x00);
+		  	  	IOWR_ALTERA_AVALON_PIO_DATA(SYSTEM_COUNTER_BASE, 0x00);
 
 				// Counter starts counting from 0 (0x00) to 255 (0xFF)
 				for(int i=0; i<256; i++){
@@ -78,7 +77,7 @@ int main()
 					counter= counter+0x1;
 
 					// time the display period of each counter value using usleep()
-					usleep(1000); // time for 1 million micro seconds
+					usleep(50000); // time for 1 million micro seconds
 
 
 				}
@@ -87,30 +86,21 @@ int main()
 
 	// check if the mode is 3 so random pattern starts
 	 if(mode == 0x3){
-				alt_putstr("Random pattern \n");
-
+		 alt_putstr("Random pattern \n");
 				// First, reset all LEDs as shown in the example below
-		  	  	  IOWR_ALTERA_AVALON_PIO_DATA(RANDOM_PATTERN_BASE, 0x0000);
+		 IOWR_ALTERA_AVALON_PIO_DATA(RANDOM_PATTERN_BASE, 0x0000);
 
 
 
 
-		  		for(int i=0; i<numRand; i++){
+		 for(int i=0; i<numRand; i++){
+			 mode = IORD_ALTERA_AVALON_PIO_DATA(SYSTEM_MODES_BASE);
+			 if (mode != 0x3) break;
+			 random = rand() % (262143 - 0 + 1);
+			 IOWR_ALTERA_AVALON_PIO_DATA(RANDOM_PATTERN_BASE, random);
+			 usleep(1000000);
 
-					// always keep checking If the mode values changed. If mode changes, break the loop. (as code shown in mode=1 code)
-
-
-					// generate random pattern using rand() function
-
-
-					// display the random value onto the random-pattern LEDs using IOWR_ALTERA_AVALON_PIO_DATA
-
-
-
-		 			// time the display period of each counter value using usleep()
-					usleep(1000000); // time for 1 million micro seconds
-
-		  		  }
+		 }
 
 	 }
 
