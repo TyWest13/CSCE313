@@ -1,4 +1,4 @@
-08:42:08 **** Incremental Build of configuration Nios II for project prj2 ****
+09:17:35 **** Incremental Build of configuration Nios II for project prj2 ****
 make all 
 Info: Building ../prj2_bsp/
 make --no-print-directory -C ../prj2_bsp/
@@ -9,11 +9,11 @@ Info: Linking prj2.elf
 nios2-elf-g++ -T'../prj2_bsp//linker.x' -msys-crt0='../prj2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../prj2_bsp/   -Wl,-Map=prj2.map   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o prj2.elf obj/default/prj2.o -lm -msys-lib=m
 nios2-elf-insert prj2.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "/acct/tydw/Desktop/CSCE313/porject1test" --jdi ../..//output_files/test.jdi --sopcinfo /acct/tydw/Desktop/CSCE313/porject1test/software/prj2_bsp/../../nios_system.sopcinfo
 Picked up _JAVA_OPTIONS: -Duser.home=/acct/tydw
-Info: (prj2.elf) 29 KBytes program size (code + initialized data).
-Info:            27 KBytes free for stack + heap.
+Info: (prj2.elf) 30 KBytes program size (code + initialized data).
+Info:            26 KBytes free for stack + heap.
 Info: Creating prj2.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source prj2.elf >prj2.objdump
 [prj2 build complete]
 
-08:42:09 Build Finished (took 571ms)
+09:17:36 Build Finished (took 512ms)
 

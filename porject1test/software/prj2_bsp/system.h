@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'nios_system'
  * SOPC Builder design path: ../../nios_system.sopcinfo
  *
- * Generated: Wed Jan 24 09:02:52 EST 2024
+ * Generated: Wed Feb 07 08:33:06 EST 2024
  */
 
 /*
@@ -163,24 +163,51 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x21030
+#define ALT_STDERR_BASE 0x210a0
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x21030
+#define ALT_STDIN_BASE 0x210a0
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x21030
+#define ALT_STDOUT_BASE 0x210a0
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
 #define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
 #define ALT_SYSTEM_NAME "nios_system"
+
+
+/*
+ * bcd_input configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_bcd_input altera_avalon_pio
+#define BCD_INPUT_BASE 0x21010
+#define BCD_INPUT_BIT_CLEARING_EDGE_REGISTER 0
+#define BCD_INPUT_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define BCD_INPUT_CAPTURE 0
+#define BCD_INPUT_DATA_WIDTH 4
+#define BCD_INPUT_DO_TEST_BENCH_WIRING 0
+#define BCD_INPUT_DRIVEN_SIM_VALUE 0
+#define BCD_INPUT_EDGE_TYPE "NONE"
+#define BCD_INPUT_FREQ 50000000
+#define BCD_INPUT_HAS_IN 1
+#define BCD_INPUT_HAS_OUT 0
+#define BCD_INPUT_HAS_TRI 0
+#define BCD_INPUT_IRQ -1
+#define BCD_INPUT_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define BCD_INPUT_IRQ_TYPE "NONE"
+#define BCD_INPUT_NAME "/dev/bcd_input"
+#define BCD_INPUT_RESET_VALUE 0
+#define BCD_INPUT_SPAN 16
+#define BCD_INPUT_TYPE "altera_avalon_pio"
 
 
 /*
@@ -200,7 +227,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x21030
+#define JTAG_UART_0_BASE 0x210a0
 #define JTAG_UART_0_IRQ 0
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -247,7 +274,7 @@
  */
 
 #define ALT_MODULE_CLASS_random_pattern altera_avalon_pio
-#define RANDOM_PATTERN_BASE 0x21000
+#define RANDOM_PATTERN_BASE 0x21070
 #define RANDOM_PATTERN_BIT_CLEARING_EDGE_REGISTER 0
 #define RANDOM_PATTERN_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define RANDOM_PATTERN_CAPTURE 0
@@ -269,12 +296,174 @@
 
 
 /*
+ * segment0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_segment0 altera_avalon_pio
+#define SEGMENT0_BASE 0x21060
+#define SEGMENT0_BIT_CLEARING_EDGE_REGISTER 0
+#define SEGMENT0_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SEGMENT0_CAPTURE 0
+#define SEGMENT0_DATA_WIDTH 8
+#define SEGMENT0_DO_TEST_BENCH_WIRING 0
+#define SEGMENT0_DRIVEN_SIM_VALUE 0
+#define SEGMENT0_EDGE_TYPE "NONE"
+#define SEGMENT0_FREQ 50000000
+#define SEGMENT0_HAS_IN 0
+#define SEGMENT0_HAS_OUT 1
+#define SEGMENT0_HAS_TRI 0
+#define SEGMENT0_IRQ -1
+#define SEGMENT0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SEGMENT0_IRQ_TYPE "NONE"
+#define SEGMENT0_NAME "/dev/segment0"
+#define SEGMENT0_RESET_VALUE 0
+#define SEGMENT0_SPAN 16
+#define SEGMENT0_TYPE "altera_avalon_pio"
+
+
+/*
+ * segment1 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_segment1 altera_avalon_pio
+#define SEGMENT1_BASE 0x21050
+#define SEGMENT1_BIT_CLEARING_EDGE_REGISTER 0
+#define SEGMENT1_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SEGMENT1_CAPTURE 0
+#define SEGMENT1_DATA_WIDTH 8
+#define SEGMENT1_DO_TEST_BENCH_WIRING 0
+#define SEGMENT1_DRIVEN_SIM_VALUE 0
+#define SEGMENT1_EDGE_TYPE "NONE"
+#define SEGMENT1_FREQ 50000000
+#define SEGMENT1_HAS_IN 0
+#define SEGMENT1_HAS_OUT 1
+#define SEGMENT1_HAS_TRI 0
+#define SEGMENT1_IRQ -1
+#define SEGMENT1_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SEGMENT1_IRQ_TYPE "NONE"
+#define SEGMENT1_NAME "/dev/segment1"
+#define SEGMENT1_RESET_VALUE 0
+#define SEGMENT1_SPAN 16
+#define SEGMENT1_TYPE "altera_avalon_pio"
+
+
+/*
+ * segment2 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_segment2 altera_avalon_pio
+#define SEGMENT2_BASE 0x21040
+#define SEGMENT2_BIT_CLEARING_EDGE_REGISTER 0
+#define SEGMENT2_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SEGMENT2_CAPTURE 0
+#define SEGMENT2_DATA_WIDTH 8
+#define SEGMENT2_DO_TEST_BENCH_WIRING 0
+#define SEGMENT2_DRIVEN_SIM_VALUE 0
+#define SEGMENT2_EDGE_TYPE "NONE"
+#define SEGMENT2_FREQ 50000000
+#define SEGMENT2_HAS_IN 0
+#define SEGMENT2_HAS_OUT 1
+#define SEGMENT2_HAS_TRI 0
+#define SEGMENT2_IRQ -1
+#define SEGMENT2_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SEGMENT2_IRQ_TYPE "NONE"
+#define SEGMENT2_NAME "/dev/segment2"
+#define SEGMENT2_RESET_VALUE 0
+#define SEGMENT2_SPAN 16
+#define SEGMENT2_TYPE "altera_avalon_pio"
+
+
+/*
+ * segment3 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_segment3 altera_avalon_pio
+#define SEGMENT3_BASE 0x21030
+#define SEGMENT3_BIT_CLEARING_EDGE_REGISTER 0
+#define SEGMENT3_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SEGMENT3_CAPTURE 0
+#define SEGMENT3_DATA_WIDTH 8
+#define SEGMENT3_DO_TEST_BENCH_WIRING 0
+#define SEGMENT3_DRIVEN_SIM_VALUE 0
+#define SEGMENT3_EDGE_TYPE "NONE"
+#define SEGMENT3_FREQ 50000000
+#define SEGMENT3_HAS_IN 0
+#define SEGMENT3_HAS_OUT 1
+#define SEGMENT3_HAS_TRI 0
+#define SEGMENT3_IRQ -1
+#define SEGMENT3_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SEGMENT3_IRQ_TYPE "NONE"
+#define SEGMENT3_NAME "/dev/segment3"
+#define SEGMENT3_RESET_VALUE 0
+#define SEGMENT3_SPAN 16
+#define SEGMENT3_TYPE "altera_avalon_pio"
+
+
+/*
+ * segment4 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_segment4 altera_avalon_pio
+#define SEGMENT4_BASE 0x21020
+#define SEGMENT4_BIT_CLEARING_EDGE_REGISTER 0
+#define SEGMENT4_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SEGMENT4_CAPTURE 0
+#define SEGMENT4_DATA_WIDTH 8
+#define SEGMENT4_DO_TEST_BENCH_WIRING 0
+#define SEGMENT4_DRIVEN_SIM_VALUE 0
+#define SEGMENT4_EDGE_TYPE "NONE"
+#define SEGMENT4_FREQ 50000000
+#define SEGMENT4_HAS_IN 0
+#define SEGMENT4_HAS_OUT 1
+#define SEGMENT4_HAS_TRI 0
+#define SEGMENT4_IRQ -1
+#define SEGMENT4_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SEGMENT4_IRQ_TYPE "NONE"
+#define SEGMENT4_NAME "/dev/segment4"
+#define SEGMENT4_RESET_VALUE 0
+#define SEGMENT4_SPAN 16
+#define SEGMENT4_TYPE "altera_avalon_pio"
+
+
+/*
+ * speed_controller configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_speed_controller altera_avalon_pio
+#define SPEED_CONTROLLER_BASE 0x21000
+#define SPEED_CONTROLLER_BIT_CLEARING_EDGE_REGISTER 0
+#define SPEED_CONTROLLER_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define SPEED_CONTROLLER_CAPTURE 0
+#define SPEED_CONTROLLER_DATA_WIDTH 1
+#define SPEED_CONTROLLER_DO_TEST_BENCH_WIRING 0
+#define SPEED_CONTROLLER_DRIVEN_SIM_VALUE 0
+#define SPEED_CONTROLLER_EDGE_TYPE "NONE"
+#define SPEED_CONTROLLER_FREQ 50000000
+#define SPEED_CONTROLLER_HAS_IN 1
+#define SPEED_CONTROLLER_HAS_OUT 0
+#define SPEED_CONTROLLER_HAS_TRI 0
+#define SPEED_CONTROLLER_IRQ -1
+#define SPEED_CONTROLLER_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SPEED_CONTROLLER_IRQ_TYPE "NONE"
+#define SPEED_CONTROLLER_NAME "/dev/speed_controller"
+#define SPEED_CONTROLLER_RESET_VALUE 0
+#define SPEED_CONTROLLER_SPAN 16
+#define SPEED_CONTROLLER_TYPE "altera_avalon_pio"
+
+
+/*
  * system_counter configuration
  *
  */
 
 #define ALT_MODULE_CLASS_system_counter altera_avalon_pio
-#define SYSTEM_COUNTER_BASE 0x21010
+#define SYSTEM_COUNTER_BASE 0x21080
 #define SYSTEM_COUNTER_BIT_CLEARING_EDGE_REGISTER 0
 #define SYSTEM_COUNTER_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define SYSTEM_COUNTER_CAPTURE 0
@@ -301,7 +490,7 @@
  */
 
 #define ALT_MODULE_CLASS_system_modes altera_avalon_pio
-#define SYSTEM_MODES_BASE 0x21020
+#define SYSTEM_MODES_BASE 0x21090
 #define SYSTEM_MODES_BIT_CLEARING_EDGE_REGISTER 0
 #define SYSTEM_MODES_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define SYSTEM_MODES_CAPTURE 0
