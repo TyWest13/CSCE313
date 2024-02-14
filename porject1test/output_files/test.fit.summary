@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Feb  7 08:28:16 2024
+Fitter Status : Successful - Wed Feb 14 08:53:17 2024
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : test
 Top-level Entity Name : test
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 3,419 / 114,480 ( 3 % )
-    Total combinational functions : 3,003 / 114,480 ( 3 % )
+Total logic elements : 3,440 / 114,480 ( 3 % )
+    Total combinational functions : 3,033 / 114,480 ( 3 % )
     Dedicated logic registers : 2,037 / 114,480 ( 2 % )
 Total registers : 2037
 Total pins : 53 / 529 ( 10 % )
